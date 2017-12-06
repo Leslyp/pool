@@ -1,0 +1,36 @@
+html, body {
+	font-size: 18px;
+	color: $color-black;
+	font-family: $font-Open-sans;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+/*
+h1 {
+	font-size: 60px;
+	line-height: 75px;
+	color: $color-black;
+	font-weight: bold;
+	font-family: $font-Josefin;
+}*/
+
+h2 {
+	font-size: 26px;
+	line-height: 30px;
+	color: $color-black;
+	font-family: $font-Open-sans;
+	font-weight: light;
+}
+
+p {
+	font-size: 12px;
+	line-height: 20px;
+	color: $color-black;
+	font-family: $font-Open-sans;
+}
+
+.mobile-line {
+	@media screen and (min-width: 1440px) {
+		display: none;
+	}
+}

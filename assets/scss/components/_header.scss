@@ -1,0 +1,29 @@
+header {
+	display: none;
+	background-color: $color-primary;
+	color: white;
+	padding-top: 18px;
+	width: 100%;
+	
+	.contain-header	{
+		.footer__list-two {
+			list-style: none;
+			display: flex;
+
+			&-item {
+				font-size: 12px;
+				line-height: 14px;
+				margin: 0 17px;
+
+				img {
+					width: 13px;
+					height: 10px;
+				}
+			}
+		}
+	}
+
+	@media screen and (min-width: 1440px) {
+		display: inline-block;
+	}
+}

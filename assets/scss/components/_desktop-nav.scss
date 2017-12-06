@@ -1,0 +1,53 @@
+.desktop-nav {
+	height: 106px;
+	
+	.nav__list {
+		display: flex;
+		height: 36px;
+		&-item {
+			.logo {
+				width: 231px;
+				height: 31px;
+				margin-left: 137px;
+			}
+			.button {
+				margin-top: -29px;
+				border: 1px solid $color-text-special;
+				padding: 0;
+				width: 174px;
+				height: 46px;
+				font-size: 15px;
+				line-height: 18px;
+				color: $color-text-special;
+				font-family: $font-Open-sans;
+		
+				img {
+					width: 12px;
+					height: 16px;
+					margin-right: 11px;
+					margin-top: -6px;
+				}
+			}
+			&--special {
+				ul {
+					margin-left: 154px;
+					display: flex;
+					font-size: 15px;
+					line-height: 20px;
+					font-weight: bold;
+					color: $color-primary;
+					
+
+					li {
+						padding: 12px 30px;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (min-width: 1440px) {
+		/* show desktop nav in desktop view */
+		display: inline;
+	}	
+}

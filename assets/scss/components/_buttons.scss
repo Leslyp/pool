@@ -1,0 +1,30 @@
+.button {
+	background-color: $color-white;
+	border: 1px solid $color-text-special;
+	border-radius: 2px;
+	color: $color-white;
+	font-family: $font-Open-sans;
+
+	&--secondary {
+		background-color: $color-text-special;
+		border: none;
+		padding: 4px 5px;
+		width: 248px;
+		height: 38px; 
+		img {
+			width: 30px;
+			height: 30px;
+		}
+	}
+
+	&--tertiary {
+		padding: 0;
+		border: 1px solid $button-border-primary;
+		width: 192px;
+		height: 48px; 
+	}
+}
+
+
+
+
