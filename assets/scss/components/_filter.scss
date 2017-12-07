@@ -1,6 +1,110 @@
-.filter {
+.filter-mobile {
 	width: 375px;
-	height: 333px;
+	/*height: 333px;*/
+	background-color: $background-primary;
+	padding-top: 17px;
+	padding-bottom: 20px;
+
+	&__text {
+		&--blue {
+			color: $color-text-special;
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 20px;
+		}
+		&--bold {
+			color: $color-black;
+			font-weight: bold;
+			font-size: 15px;
+			line-height: 21px;
+		}
+	}
+	&__container {
+		padding-top: 7px;
+	}
+	&__results {
+		width: 155px;
+		background-color: $color-white;
+		border: 1px solid $line-break-primary;
+		
+		span {
+			padding: 6px;
+		}
+		.button--mobile-menu {
+			width: 38px;
+			height: 38px;
+			padding: 0;
+			background-color: $background-primary;
+			border: none;
+			border-left: 1px solid $line-break-primary;
+			margin-bottom: 0;
+		}
+	}
+	&__form {
+		display: none;
+		border: 1px solid $line-break-primary;
+		width: 344px;
+		padding: 15px 25px;
+		margin: -1px 16px;
+		background-color: $color-white;
+	}
+
+	.checkbox-container {
+		img {
+			width: 21px;
+			height: 22px;
+		}
+		label {
+			font-size: 16px;
+			line-height: 58px;
+		}
+		input {
+			transform: scale(1.8);
+			&::before {
+				display: none;
+		  		content: '';
+		  		width: 26px;
+		  		height: 26px;
+		  		position: absolute;
+		  		background-color: $color-text-special;
+		  		border-radius: 6px;
+		  		top: -4px;
+		  		left: -6px;
+		  	}
+		  	&::after {
+				display: none;
+		  		content: '';
+		  		width: 8px;
+		  		height: 8px;
+		  		position: absolute;
+		  		background-color: white;
+		  		top: 5px;
+		  		left: 3px;
+		  	}
+		}
+		input:checked {
+		  	transform: scale(1);
+		  	&::before {
+				display: inline-block;
+		  	}
+		  	&::after {
+				display: inline-block;
+		  	}
+		  	
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		display: none;
+	}
+}
+
+
+
+.filter-desktop {
+	width: 100%;
+	height: 87px;
+	display: none;
 	background-color: $background-primary;
 	padding: 0 100px;
 	border-radius: 10px;
@@ -51,18 +155,48 @@
 		label {
 			font-size: 12px;
 			line-height: 17px;
+			margin-left: 13px;
 		}
 		div {
 			padding-right: 10px;
 		}
-
-		input[type=checkbox] {
-		  transform: scale(1.5);
+		input {
+			transform: scale(1.8);
+			&::before {
+				display: none;
+		  		content: '';
+		  		width: 26px;
+		  		height: 26px;
+		  		position: absolute;
+		  		background-color: $color-text-special;
+		  		border-radius: 6px;
+		  		top: -4px;
+		  		left: -6px;
+		  	}
+		  	&::after {
+				display: none;
+		  		content: '';
+		  		width: 8px;
+		  		height: 8px;
+		  		position: absolute;
+		  		background-color: white;
+		  		top: 5px;
+		  		left: 3px;
+		  	}
+		}
+		input:checked {
+		  	transform: scale(1);
+		  	&::before {
+				display: inline-block;
+		  	}
+		  	&::after {
+				display: inline-block;
+		  	}
+		  	
 		}
 	}
 
-	@media screen and (min-width: 1440px) {
-		width: 100%;
-		height: 87px;
+	@media screen and (min-width: 1200px) {
+		display: inline;
 	}
 }

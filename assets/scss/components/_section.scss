@@ -1,9 +1,14 @@
 .section {
-	&--filter {
+	/*&--filter-mobile{
 		background-color: $background-primary;
 
 		@media screen and (min-width: 1440px) {
-			background-color: transparent;
+			display: none;
+		}
+	}*/
+	&--filter-desktop{
+		@media screen and (min-width: 1440px) {
+			margin-top: -70px;
 		}
 	}
 	&--options {

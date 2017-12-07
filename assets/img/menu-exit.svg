@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>X - vector</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect x="342" y="36" width="17" height="17" id="rect-1"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-333.000000, -23.000000)">
+            <g id="background" transform="translate(-9.000000, -13.000000)">
+                <g id="X---vector">
+                    <image x="342" y="36" width="17" height="17" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAABc2lDQ1BJQ0MgUHJvZmlsZQAAKJF9kE0rRGEUx38zQyNGFAvJ4pZh5WVQWDKzkLLQoLxt7lzzombu3O7cychW2VgoC7HxtvAFxFZZK0WkpHwFYiNd5zGj8VJOnc6v/3POec454A3qlpWuCEHGdOzoSFibnpnV/I8E8FNPG926kbOGx8fHEPuKP+31Bo+KV52q19/3f61mIZ4zwFMl3G9YtiM8JNy65FiKF4QbbRlKuKA4WeR1xbEi733mTEYjwsfCmpHSpc5zLdxhpOwMeNVfwdi3nOQ3zqTzRmketUkgbk5NSGwWbyFHlBHCaMTIs0gah06JJjjxgqOKIllr2V5MphxtWC4Q10ZNo6tD6w31DIC65+87lbWszD74Ar6NshbbgtM1aLora8FdqFuFk3NLt/VPySfuTSTg6QhqZ6DhEqrncom+3uImgTBUPrjucxv4N+F9w3Xf9l33/UCK7+HMLN6m1IvDW5hcgbEL2N6BduldN/8BwYhnYHODOGYAAAFDSURBVDgRfZM9bsJAEEZx0iFR5wQ0SDmA0+UaiUSNkOhzg1wBOoIU90ipU8IhOAEnoIE47xvPrmy83k+a/ZmdfR7P7hYjVBwPH3TP2LwuX27y5UT8mPU9tiX+u3DAp2+q6LMgB/wQ94r9Kf6BRhkEvTHYEfgYHO3+DqAl7S/VzDFlEJQEJQCKX2OrQiP/8o6hAEHx1zKAJTWpDaJdGdCCZRVRNQhSBgaQI0Js0tTiPqMza09ad3UA8nUg5kiDfL/VIGYQnD2Igyb0J6ydgeYzanBVTFs6nY68iKpBG6CYKfbltdM8qgMZOAVlEJQ8/ggZAKiIMyx7jwySAaiIqkH2Qurt6DGFt8DQ1D/G9KnZhVQm2Yvk0BEZ6XWnMtoIssX0GqVeBo27aROgCyuV3RN+6Z1Jia0IrJstwy3xeuUbrCL+9x+XNYjhjvXI5wAAAABJRU5ErkJggg=="></image>
+                    <use fill-opacity="0" fill="#000000" fill-rule="evenodd" xlink:href="#rect-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

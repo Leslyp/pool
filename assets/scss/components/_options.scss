@@ -3,6 +3,16 @@
 		box-shadow: 0 3px 20px -5px grey;
 		margin-top: 0;
 
+		hr {
+			display: none;
+			width: 309px;
+			color: #ECECEC;
+			margin-bottom: 31px;
+
+			@media screen and (min-width: 1440px) {
+				display: inline-block;
+			}
+		}
 		&__title {
 			margin: 0;
 			padding-top: 29px;
@@ -14,7 +24,23 @@
 			font-size: 12;
 			line-height: 16px;
 		}
-
+		.desktop__content {
+			display: none;
+			
+			&-image {
+				width: 31px;
+				height: 31px;
+				margin-right: 10px;
+			}
+			&-text {
+				font-weight: 900;
+				font-size: 26px;
+				line-height: 36px;
+			}
+			@media screen and (min-width: 1440px) {
+				display: inline-block;
+			}
+		}
 		.button {
 			&--secondary {
 				margin-bottom: 15px;
@@ -33,6 +59,10 @@
 					font-size: 18px;
 					line-height: 24px;
 				}
+
+				@media screen and (min-width: 1440px) {
+					display: none;
+				}
 			}
 			
 			&--tertiary {
@@ -40,6 +70,7 @@
 					width: 15px;
 					height: 13px;
 					margin-top: -7px;
+					margin-right: 5px;
 
 				}
 				.button__text  {
@@ -50,9 +81,9 @@
 				}
 			}
 		}
-
 		ul {
 			list-style: none;
+			margin-left: 1px;
 
 			.option__list {
 				&-item--bold {
@@ -66,7 +97,6 @@
 				}
 			}
 		}
-
 		ul.option__list-pro {
 			background: $background-primary;
 			margin: 0;

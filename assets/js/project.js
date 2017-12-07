@@ -1,7 +1,34 @@
-// jQuery( document ).ready( function( $ ) {
+jQuery( document ).ready( function( $ ) {
+	
+	$("#mobile-menu").on("click", function(){
+	    $(".filter-mobile__form").toggle();
+	}); 
+
+	$("#menu-icon").on("click mouseenter", function(){
+	    $(".menu-dropdown").show();
+	}); 
 
 
 
+
+
+	$("#menu-exit").on("click", function(){
+	    $(".menu-dropdown").hide();
+	}); 
+
+	// $("#form-filter").on("click", function(){
+	//     if(service) {
+	//         alert("Checkbox is checked.");
+
+	//         $("#test").prepend($('<img>',{id:'theImg',src:'./assets/img/checkbox-real.svg'}));
+	//     } else {
+	//         alert("Checkbox is unchecked.");
+	//         $("#test").remove('<img>');
+
+	//     }
+	// }); 
+
+		
 // $.ajax({
  
 //     // The URL for the request
@@ -39,4 +66,6 @@
 //     alert( "The request is complete!" );
 //   });
 
-// });
+ });
+
+

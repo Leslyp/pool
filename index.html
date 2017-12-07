@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
-    <body>
+    <body> 
         <header>
             <div class="row  contain-header">
                 <div class="columns">
@@ -41,10 +41,30 @@
                     </li>
                     <li class="nav__list-item">
                         <a href="#">
-                            <img class="menu" src="./assets/img/menu-icon-mobile.png" alt="nav menu">
+                            <img id="menu-icon" class="menu" src="./assets/img/menu-icon-mobile.png" alt="nav menu">
                         </a>
                     </li>
                 </ul>
+                <div class="menu-dropdown">
+                    <div>
+                        <h2>Menu</h2>
+                        <img id="menu-exit" src="./assets/img/menu-exit.svg" alt="menu exit icon">
+                    </div>
+                    <ul class="menu__list">
+                        <li class="menu__list-item">Pools &amp; Spas 
+                            <span class="menu__list-item--side">next</span>
+                        </li>
+                        <li class="menu__list-item">Supplies 
+                            <span class="menu__list-item--side">next</span>
+                        </li>
+                        <li class="menu__list-item">Resources 
+                            <span class="menu__list-item--side">next</span>
+                        </li>
+                        <li class="menu__list-item">Services 
+                            <span class="menu__list-item--side">next</span>
+                        </li>
+                    </ul>
+                </div>
             </nav>
 
             <nav class="top-bar  desktop-nav" data-topbar role="navigation">
@@ -66,7 +86,7 @@
                             </li>
                             <li class="nav__list-item">
                                 <button type="button" class="button">
-                                    <img src="./assets/img/location-icon.png">
+                                    <img src="./assets/img/location-icon.png" alt="pin">
                                     Find a Pool Pro
                                 </button>
                             </li>
@@ -78,14 +98,79 @@
 
         <section class="section section--hero"></section>
         
-        <section class="section section--filter">
+        <section class="section section--filter-mobile">
+            
+            <div class="row  filter-mobile">
+                <div class="columns small-6">
+                    <div class="filter-mobile__container">
+                        <span class="filter-mobile__text--blue">7 dealers in 28226</span>
+                    </div>
+                </div>
+                <div class="columns small-6">
+                    <div class="filter-mobile__results">
+                        <span class="filter-mobile__text--bold">Filter Results</span>
+                        <button id="mobile-menu" class="button button--mobile-menu">
+                            <img src="./assets/img/down-arrow.svg" alt="down arrow">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="columns  filter-mobile__form">
+                    <form action="get" id="form-filter" class="checkbox-container">
+                        <div>
+                            <input type="checkbox" id="service" name="service" value="service" checked>
+                            <label for="service">Service</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="installation" name="installation" value="installation" checked>
+                            <label for="installation">Installation</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="residential" name="residential" value="residential" checked>
+                            <label for="residential">Residential</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="commercial" name="commercial" value="commercial">
+                            <label for="commercial">Commercial</label>
+                            <img src="./assets/img/tool-tip-icon-filtering.png" alt="question mark">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- <div class="row  filter-mobile"> -->
+                <!-- <div class="columns">
+                    <form action="get" id="form-filter" class="checkbox-container">
+                        <div>
+                            <input type="checkbox" id="service" name="service" value="service" checked>
+                            <label for="service">Service</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="installation" name="installation" value="installation" checked>
+                            <label for="installation">Installation</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="residential" name="residential" value="residential" checked>
+                            <label for="residential">Residential</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="commercial" name="commercial" value="commercial">
+                            <label for="commercial">Commercial</label>
+                            <img src="./assets/img/tool-tip-icon-filtering.png" alt="question mark">
+                        </div>
+                    </form>
+                </div> -->
+            <!-- </div> -->
+        </section> 
+
+        <section class="section section--filter-desktop">
             <div class="row">
-                <div class="columns  filter">
-                    <ul class="filter__list">
-                        <li class="filter__list-item--blue">7 dealers in 28226</li>
-                        <li class="filter__list-item--vr">|</li>
-                        <li class="filter__list-item--bold">Filter Results</li>
-                        <li class="filter__list-item--form">
+                <div class="columns  filter-desktop">
+                    <ul class="filter-desktop__list">
+                        <li class="filter-desktop__list-item--blue">7 dealers in 28226</li>
+                        <li class="filter-desktop__list-item--vr">|</li>
+                        <li class="filter-desktop__list-item--bold">Filter Results</li>
+                        <li class="filter-desktop__list-item--form">
                             <form action="get" id="form-filter" class="right  checkbox-container">
                                 <div>
                                     <input type="checkbox" id="service" name="service" value="service" checked>
@@ -118,6 +203,11 @@
                 <div class="columns medium-4 large-4">
                     <div class="option">
                         <h2 class="option__title">test</h2>
+                        <hr>
+                        <div class="desktop__content">
+                            <img class="desktop__content-image" src="./assets/img/phone-icon-desktop.png" alt="phone">
+                            <span class="desktop__content-text">1.888.888.8888</span>
+                        </div>
                         <button class="button button--secondary">
                             <img class="button__image--phone" src="./assets/img/phone-icon-mobile.png" alt="phone">
                             <span class="button__text--tap">Tap to call</span>
@@ -134,7 +224,7 @@
                             <li class="option__list-item">test</li>
                             <li class="option__list-item">test</li>
                         </ul>
-                        <hr>
+
                         <ul class="option__list-pro">
                             <div class="row">
                                 <li class="columns small-6 large-6  option__list-pro-item">
@@ -164,6 +254,11 @@
                 <div class="columns medium-4 large-4">
                     <div class="option">
                         <h2 class="option__title">test</h2>
+                        <hr>
+                        <div class="desktop__content">
+                            <img class="desktop__content-image" src="./assets/img/phone-icon-desktop.png" alt="phone">
+                            <span class="desktop__content-text">1.888.888.8888</span>
+                        </div>
                         <button class="button button--secondary">
                             <img class="button__image--phone" src="./assets/img/phone-icon-mobile.png" alt="phone">
                             <span class="button__text--tap">Tap to call</span>
@@ -180,7 +275,7 @@
                             <li class="option__list-item">test</li>
                             <li class="option__list-item">test</li>
                         </ul>
-                        <hr>
+
                         <ul class="option__list-pro">
                             <div class="row">
                                 <li class="columns small-6 large-6  option__list-pro-item">
@@ -210,6 +305,11 @@
                 <div class="columns medium-4 large-4">
                     <div class="option">
                         <h2 class="option__title">test</h2>
+                        <hr>
+                        <div class="desktop__content">
+                            <img class="desktop__content-image" src="./assets/img/phone-icon-desktop.png" alt="phone">
+                            <span class="desktop__content-text">1.888.888.8888</span>
+                        </div>
                         <button class="button button--secondary">
                             <img class="button__image--phone" src="./assets/img/phone-icon-mobile.png" alt="phone">
                             <span class="button__text--tap">Tap to call</span>
@@ -226,7 +326,7 @@
                             <li class="option__list-item">test</li>
                             <li class="option__list-item">test</li>
                         </ul>
-                        <hr>
+
                         <ul class="option__list-pro">
                             <div class="row">
                                 <li class="columns small-6 large-6  option__list-pro-item">
@@ -320,7 +420,8 @@
                 </div>
             </div>
         </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
         <script src="assets/js/project.js"></script>
     </body>
 </html>

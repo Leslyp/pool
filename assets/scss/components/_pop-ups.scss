@@ -1,0 +1,11 @@
+.menu-dropdown {
+	display: none;
+	width: 375px;
+	height: 442px;
+	background-color: $menu-background;
+	position: absolute;
+	z-index: 1;
+	margin-top: 15px;
+	border-top: 6px solid $menu-primary;
+	border-bottom: 6px solid $menu-primary;
+}
