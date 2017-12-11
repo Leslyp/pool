@@ -16295,36 +16295,27 @@ header {
     width: 192px;
     height: 48px; }
 
-/*@import 'components/hero';*/
-.section {
-  	/*&--filter-mobile{
-  		background-color: $background-primary;
-  
-  		@media screen and (min-width: 1440px) {
-  			display: none;
-  		}
-  	}*/ }
+@media screen and (min-width: 1440px) {
+  .section--filter-desktop {
+    margin-top: -70px; } }
+.section--options {
+  margin-bottom: 40px; }
   @media screen and (min-width: 1440px) {
-    .section--filter-desktop {
-      margin-top: -70px; } }
-  .section--options {
-    margin-bottom: 40px; }
-    @media screen and (min-width: 1440px) {
-      .section--options {
-        margin-top: 26px; } }
-  .section--hero {
-    margin-top: 7px;
-    background-image: url("../img/water-image.png");
-    background-size: 282% 133%;
-    background-position: -339px -3px;
-    background-repeat: no-repeat;
-    height: 100px;
-    width: 100%; }
-    @media screen and (min-width: 1440px) {
-      .section--hero {
-        background-size: 100% 100%;
-        height: 199px;
-        background-position: center; } }
+    .section--options {
+      margin-top: 26px; } }
+.section--hero {
+  margin-top: -10px;
+  background-image: url("../img/water-image.png");
+  background-size: 282% 133%;
+  background-position: -339px -3px;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100%; }
+  @media screen and (min-width: 1440px) {
+    .section--hero {
+      background-size: 100% 100%;
+      height: 199px;
+      background-position: center; } }
 
 hr {
   color: #D8D8D8;
@@ -16332,7 +16323,6 @@ hr {
 
 .filter-mobile {
   width: 375px;
-  /*height: 333px;*/
   background-color: #F6F6F6;
   padding-top: 17px;
   padding-bottom: 20px; }
@@ -16497,8 +16487,10 @@ hr {
   .options .option__title {
     margin: 0;
     padding-top: 29px;
-    margin-bottom: 22px; }
+    margin-bottom: 22px;
+    font-weight: 300; }
   .options .option__text {
+    margin-top: 20px;
     margin-bottom: 19px;
     font-style: italic;
     font-size: 12;
@@ -16562,25 +16554,253 @@ hr {
       width: 13px;
       height: 13px;
       margin-right: 10px; }
+    .options .option ul.option__list-pro.special {
+      margin-top: 29px; }
     @media screen and (min-width: 1440px) {
       .options .option ul.option__list-pro {
         border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px; } }
+        border-bottom-right-radius: 10px;
+        margin-top: 60px; } }
   @media screen and (min-width: 1440px) {
     .options .option {
       box-shadow: 0px 1px 10px 0px grey;
-      border-radius: 10px; } }
+      border-radius: 10px;
+      height: 525px; } }
 
-.menu-dropdown {
+.dropdown {
   display: none;
   width: 375px;
-  height: 442px;
+  height: 425px;
   background-color: #F6F6F6;
   position: absolute;
   z-index: 1;
   margin-top: 15px;
   border-top: 6px solid #0BC9C8;
   border-bottom: 6px solid #0BC9C8; }
+  .dropdown__header {
+    background-color: #FFF;
+    position: relative; }
+    .dropdown__header-title {
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: uppercase;
+      margin: 0;
+      text-align: center;
+      padding-top: 39px;
+      padding-bottom: 29px;
+      color: #01529E; }
+    .dropdown__header-image {
+      position: absolute;
+      top: 16px;
+      right: 31px; }
+  .dropdown__list-item {
+    position: relative;
+    font-size: 18px;
+    line-height: 22px;
+    color: #616161;
+    padding: 28px 30px;
+    border-bottom: 3px solid white;
+    margin-left: -20px; }
+  .dropdown__list-side {
+    color: #0BC9C8;
+    right: 31px;
+    position: absolute; }
+  .dropdown__list li:last-child {
+    border-bottom: none;
+    padding-bottom: 39px; }
+
+.reveal-modal, dialog {
+  top: 131px;
+  margin: 12px;
+  width: 352px; }
+  .reveal-modal a.close-reveal-modal, dialog a.close-reveal-modal {
+    color: #FFF;
+    top: 4px;
+    right: 20px; }
+    @media screen and (min-width: 1440px) {
+      .reveal-modal a.close-reveal-modal, dialog a.close-reveal-modal {
+        top: 12px; } }
+  .reveal-modal--email {
+    background-color: #FFF;
+    padding: 0; }
+    .reveal-modal--email .email__content {
+      background-color: #083D8C; }
+      .reveal-modal--email .email__content-heading {
+        margin: 0;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        padding-top: 25px;
+        padding-left: 20px;
+        color: #FFF; }
+        @media screen and (min-width: 1440px) {
+          .reveal-modal--email .email__content-heading {
+            font-size: 16px;
+            line-height: 18px;
+            padding-top: 43px;
+            padding-left: 34px; } }
+      .reveal-modal--email .email__content-title {
+        margin-top: 12px;
+        margin-left: 20px;
+        padding-bottom: 36px;
+        font-size: 26px;
+        line-height: 34px;
+        color: #FFF;
+        margin-bottom: 0; }
+        @media screen and (min-width: 1440px) {
+          .reveal-modal--email .email__content-title {
+            font-size: 32px;
+            line-height: 38px;
+            margin-top: 9px;
+            margin-left: 35px;
+            padding-bottom: 35px; } }
+    .reveal-modal--email .email__body {
+      padding: 29px 16px; }
+      .reveal-modal--email .email__body-text {
+        font-size: 15px;
+        line-height: 18px;
+        color: #616161;
+        margin-bottom: 37px; }
+      @media screen and (min-width: 1440px) {
+        .reveal-modal--email .email__body {
+          padding: 29px 31px; } }
+    .reveal-modal--email .email__form-container form .buttons--mobile div {
+      display: inline; }
+    .reveal-modal--email .email__form-container form .buttons--mobile label {
+      display: inline-block;
+      color: #3F3F3F;
+      font-size: 14px;
+      line-height: 17px; }
+    .reveal-modal--email .email__form-container form .buttons--mobile input {
+      margin-top: -16px;
+      transform: scale(1.6); }
+      .reveal-modal--email .email__form-container form .buttons--mobile input::before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        border-radius: 2px;
+        top: 18px;
+        left: 0px;
+        border: 1px solid black; }
+      .reveal-modal--email .email__form-container form .buttons--mobile input::after {
+        display: none;
+        content: '';
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        background-color: white;
+        top: 20px;
+        left: 3px; }
+    .reveal-modal--email .email__form-container form .buttons--mobile input:checked {
+      transform: scale(0.8); }
+      .reveal-modal--email .email__form-container form .buttons--mobile input:checked::before {
+        display: inline;
+        content: '';
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        background-color: #216DDF;
+        border-radius: 4px;
+        top: 12px;
+        left: -6px; }
+      .reveal-modal--email .email__form-container form .buttons--mobile input:checked::after {
+        display: inline-block; }
+    @media screen and (min-width: 1440px) {
+      .reveal-modal--email .email__form-container form .buttons--mobile {
+        display: none; } }
+    .reveal-modal--email .email__form-container form .buttons--desktop {
+      display: none; }
+      @media screen and (min-width: 1440px) {
+        .reveal-modal--email .email__form-container form .buttons--desktop {
+          display: inline-block; } }
+    .reveal-modal--email .email__form-container form .short {
+      width: 250px; }
+    .reveal-modal--email .email__form-container form .hint {
+      font-size: 14px;
+      line-height: 17px;
+      color: #BEBEBE; }
+      .reveal-modal--email .email__form-container form .hint.desktop {
+        display: none; }
+        @media screen and (min-width: 1440px) {
+          .reveal-modal--email .email__form-container form .hint.desktop {
+            display: inline; } }
+    .reveal-modal--email .email__form-container form input {
+      height: 49px; }
+      @media screen and (min-width: 1440px) {
+        .reveal-modal--email .email__form-container form input {
+          height: 51px; } }
+    .reveal-modal--email .email__form-container form label {
+      display: inline-block;
+      margin-bottom: 5px; }
+    .reveal-modal--email .email__form-container form img {
+      width: 21px;
+      height: 21px; }
+    .reveal-modal--email .email__form-container form .button {
+      width: 66px;
+      height: 30px;
+      border: 1px solid #3F3F3F;
+      font-size: 14px;
+      line-height: 17px;
+      padding: 0;
+      padding: 0px 10px;
+      margin-bottom: 0; }
+      .reveal-modal--email .email__form-container form .button--teal {
+        background-color: #0BC9C8;
+        color: #FFF; }
+      .reveal-modal--email .email__form-container form .button--white {
+        background-color: #FFF;
+        color: #3F3F3F; }
+    .reveal-modal--email .email__form-container hr {
+      margin-top: 19px;
+      margin-bottom: 29px; }
+      @media screen and (min-width: 1440px) {
+        .reveal-modal--email .email__form-container hr {
+          margin-bottom: 40px; } }
+    .reveal-modal--email .email__form-container .send-container--mobile a {
+      color: #0BC9C8;
+      font-size: 16px;
+      line-height: 18px;
+      margin-left: 282px; }
+    @media screen and (min-width: 1440px) {
+      .reveal-modal--email .email__form-container .send-container--mobile {
+        display: none; } }
+    .reveal-modal--email .email__form-container .send-container--desktop {
+      display: none;
+      margin-left: 234px; }
+      .reveal-modal--email .email__form-container .send-container--desktop a {
+        color: #3F3F3F;
+        font-size: 16px;
+        line-height: 19px; }
+      .reveal-modal--email .email__form-container .send-container--desktop img {
+        width: 12px;
+        height: 14px; }
+      @media screen and (min-width: 1440px) {
+        .reveal-modal--email .email__form-container .send-container--desktop {
+          display: inline; } }
+    @media screen and (min-width: 1440px) {
+      .reveal-modal--email .email__form-container {
+        background-color: #F6F6F6;
+        padding: 0 22px;
+        padding-bottom: 42px;
+        padding-top: 32px; } }
+    .reveal-modal--email .email__footer {
+      display: none;
+      padding: 22px 26px;
+      background-color: #F6F6F6; }
+      .reveal-modal--email .email__footer-text {
+        margin-bottom: 0;
+        font-size: 13px;
+        line-height: 20px;
+        color: #616161; }
+      @media screen and (min-width: 1440px) {
+        .reveal-modal--email .email__footer {
+          display: inline-block; } }
+  @media screen and (min-width: 1440px) {
+    .reveal-modal, dialog {
+      top: 50px;
+      width: 703px;
+      margin: 0 auto; } }
 
 .footer {
   color: white; }

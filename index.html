@@ -45,23 +45,23 @@
                         </a>
                     </li>
                 </ul>
-                <div class="menu-dropdown">
-                    <div>
-                        <h2>Menu</h2>
-                        <img id="menu-exit" src="./assets/img/menu-exit.svg" alt="menu exit icon">
+                <div class="dropdown">
+                    <div class="dropdown__header">
+                        <h2 class="dropdown__header-title">Menu</h2>
+                        <img  class="dropdown__header-image" id="dropdown-exit" src="./assets/img/menu-exit.svg" alt="menu exit icon">
                     </div>
-                    <ul class="menu__list">
-                        <li class="menu__list-item">Pools &amp; Spas 
-                            <span class="menu__list-item--side">next</span>
+                    <ul class="dropdown__list">
+                        <li class="dropdown__list-item">Pools &amp; Spas 
+                            <span class="dropdown__list-side">next</span>
                         </li>
-                        <li class="menu__list-item">Supplies 
-                            <span class="menu__list-item--side">next</span>
+                        <li class="dropdown__list-item">Supplies 
+                            <span class="dropdown__list-side">next</span>
                         </li>
-                        <li class="menu__list-item">Resources 
-                            <span class="menu__list-item--side">next</span>
+                        <li class="dropdown__list-item">Resources 
+                            <span class="dropdown__list-side">next</span>
                         </li>
-                        <li class="menu__list-item">Services 
-                            <span class="menu__list-item--side">next</span>
+                        <li class="dropdown__list-item">Services 
+                            <span class="dropdown__list-side">next</span>
                         </li>
                     </ul>
                 </div>
@@ -116,7 +116,7 @@
                 </div>
 
                 <div class="columns  filter-mobile__form">
-                    <form action="get" id="form-filter" class="checkbox-container">
+                    <form action="#" id="form-filter" class="checkbox-container" method="get">
                         <div>
                             <input type="checkbox" id="service" name="service" value="service" checked>
                             <label for="service">Service</label>
@@ -138,29 +138,6 @@
                 </div>
             </div>
 
-            <!-- <div class="row  filter-mobile"> -->
-                <!-- <div class="columns">
-                    <form action="get" id="form-filter" class="checkbox-container">
-                        <div>
-                            <input type="checkbox" id="service" name="service" value="service" checked>
-                            <label for="service">Service</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="installation" name="installation" value="installation" checked>
-                            <label for="installation">Installation</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="residential" name="residential" value="residential" checked>
-                            <label for="residential">Residential</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="commercial" name="commercial" value="commercial">
-                            <label for="commercial">Commercial</label>
-                            <img src="./assets/img/tool-tip-icon-filtering.png" alt="question mark">
-                        </div>
-                    </form>
-                </div> -->
-            <!-- </div> -->
         </section> 
 
         <section class="section section--filter-desktop">
@@ -202,49 +179,49 @@
             <div class="row  text-center  options">
                 <div class="columns medium-4 large-4">
                     <div class="option">
-                        <h2 class="option__title">test</h2>
+                        <h2 id="title-one" class="option__title">test</h2>
                         <hr>
                         <div class="desktop__content">
                             <img class="desktop__content-image" src="./assets/img/phone-icon-desktop.png" alt="phone">
-                            <span class="desktop__content-text">1.888.888.8888</span>
+                            <span id="" class="desktop__content-text">1.888.888.8888</span>
                         </div>
                         <button class="button button--secondary">
                             <img class="button__image--phone" src="./assets/img/phone-icon-mobile.png" alt="phone">
                             <span class="button__text--tap">Tap to call</span>
                             <span class="button__text--number">1.888.888.8888</span>
                         </button>
-                        <p class="option__text">test</p>
-                        <button class="button button--tertiary">
+                        <p class="option__text">Can’t talk now? Click below to send an email.</p>
+                        <button data-reveal-id="modal--email" class="button button--tertiary">
                             <img class="button__image--email" src="./assets/img/email-icon.png" alt="email">
-                            <span class="button__text">test</span>
+                            <span class="button__text">Contact this Pro</span>
                         </button>
                         <ul class="option__list">
-                            <li class="option__list-item--bold">test</li>
-                            <li class="option__list-item">test</li>
-                            <li class="option__list-item">test</li>
-                            <li class="option__list-item">test</li>
+                            <li class="option__list-item--bold">Business Hours </li>
+                            <li class="option__list-item">Weekdays <span id="week-one"></span></li>
+                            <li class="option__list-item">Saturdays <span id="sat-one"></span></li>
+                            <li class="option__list-item">Sundays <span id="sun-one"></span></li>
                         </ul>
 
                         <ul class="option__list-pro">
                             <div class="row">
                                 <li class="columns small-6 large-6  option__list-pro-item">
                                     <img src="./assets/img/star-installation-pro.png" alt="star">
-                                    test
+                                    <span id="certification-star-one">test</span>
                                 </li>
                                 <li class="columns small-6 large-6  option__list-pro-item">
-                                    <img src="./assets/img/users-commercial-pro.png" alt="house">
-                                    test
+                                    <img src="./assets/img/gear-service-pro.png" alt="gear">
+                                    <span id="certification-gear-one">test</span>
                                 </li>
                             </div>
 
                             <div class="row">
                                 <li class="columns small-6 large-6  option__list-pro-item">
                                     <img src="./assets/img/home-residential-pro.png" alt="user">
-                                    test
+                                    <span id="certification-house-one">test</span>
                                 </li>
-                                <li class="columns small-6 large-6  option__list-pro-item">
-                                    <img src="./assets/img/gear-service-pro.png" alt="gear">
-                                    test
+                                 <li class="columns small-6 large-6  option__list-pro-item">
+                                    <img src="./assets/img/users-commercial-pro.png" alt="house">
+                                    <span id="certification-user-one">test</span>
                                 </li>
                             </div>                            
                         </ul>
@@ -253,7 +230,7 @@
 
                 <div class="columns medium-4 large-4">
                     <div class="option">
-                        <h2 class="option__title">test</h2>
+                        <h2 id="title-two" class="option__title">test</h2>
                         <hr>
                         <div class="desktop__content">
                             <img class="desktop__content-image" src="./assets/img/phone-icon-desktop.png" alt="phone">
@@ -264,38 +241,38 @@
                             <span class="button__text--tap">Tap to call</span>
                             <span class="button__text--number">1.888.888.8888</span>
                         </button>
-                        <p class="option__text">test</p>
-                        <button class="button button--tertiary">
+                        <p class="option__text">Can’t talk now? Click below to send an email.</p>
+                        <button data-reveal-id="modal--email" class="button button--tertiary">
                             <img class="button__image--email" src="./assets/img/email-icon.png" alt="email">
-                            <span class="button__text">test</span>
+                            <span class="button__text">Contact this Pro</span>
                         </button>
                         <ul class="option__list">
-                            <li class="option__list-item--bold">test</li>
-                            <li class="option__list-item">test</li>
-                            <li class="option__list-item">test</li>
-                            <li class="option__list-item">test</li>
+                            <li class="option__list-item--bold">Business Hours </li>
+                            <li class="option__list-item">Weekdays <span id="week-two"></span></li>
+                            <li class="option__list-item">Saturdays <span id="sat-two"></span></li>
+                            <li class="option__list-item">Sundays <span id="sun-two"></span></li>
                         </ul>
 
-                        <ul class="option__list-pro">
+                        <ul class="option__list-pro special">
                             <div class="row">
                                 <li class="columns small-6 large-6  option__list-pro-item">
                                     <img src="./assets/img/star-installation-pro.png" alt="star">
-                                    test
+                                    <span id="certification-star-two">test</span>
                                 </li>
                                 <li class="columns small-6 large-6  option__list-pro-item">
-                                    <img src="./assets/img/users-commercial-pro.png" alt="house">
-                                    test
+                                    <img src="./assets/img/gear-service-pro.png" alt="gear">
+                                    <span id="certification-gear-two">test</span>
                                 </li>
                             </div>
 
                             <div class="row">
                                 <li class="columns small-6 large-6  option__list-pro-item">
                                     <img src="./assets/img/home-residential-pro.png" alt="user">
-                                    test
+                                    <span id="certification-house-two">test</span>
                                 </li>
-                                <li class="columns small-6 large-6  option__list-pro-item">
-                                    <img src="./assets/img/gear-service-pro.png" alt="gear">
-                                    test
+                                 <li class="columns small-6 large-6  option__list-pro-item">
+                                    <img src="./assets/img/users-commercial-pro.png" alt="house">
+                                    <span id="certification-user-two">test</span>
                                 </li>
                             </div>                            
                         </ul>
@@ -304,7 +281,7 @@
 
                 <div class="columns medium-4 large-4">
                     <div class="option">
-                        <h2 class="option__title">test</h2>
+                        <h2 id="title-three" class="option__title">test</h2>
                         <hr>
                         <div class="desktop__content">
                             <img class="desktop__content-image" src="./assets/img/phone-icon-desktop.png" alt="phone">
@@ -315,38 +292,38 @@
                             <span class="button__text--tap">Tap to call</span>
                             <span class="button__text--number">1.888.888.8888</span>
                         </button>
-                        <p class="option__text">test</p>
-                        <button class="button button--tertiary">
+                        <p class="option__text">Can’t talk now? Click below to send an email.</p>
+                        <button data-reveal-id="modal--email" class="button button--tertiary">
                             <img class="button__image--email" src="./assets/img/email-icon.png" alt="email">
-                            <span class="button__text">test</span>
+                            <span class="button__text">Contact this Pro</span>
                         </button>
                         <ul class="option__list">
-                            <li class="option__list-item--bold">test</li>
-                            <li class="option__list-item">test</li>
-                            <li class="option__list-item">test</li>
-                            <li class="option__list-item">test</li>
+                            <li class="option__list-item--bold">Business Hours </li>
+                            <li class="option__list-item">Weekdays <span id="week-three"></span></li>
+                            <li class="option__list-item">Saturdays <span id="sat-three"></span></li>
+                            <li class="option__list-item">Sundays <span id="sun-three"></span></li>
                         </ul>
 
                         <ul class="option__list-pro">
                             <div class="row">
                                 <li class="columns small-6 large-6  option__list-pro-item">
                                     <img src="./assets/img/star-installation-pro.png" alt="star">
-                                    test
+                                    <span id="certification-star-three">test</span>
                                 </li>
                                 <li class="columns small-6 large-6  option__list-pro-item">
-                                    <img src="./assets/img/users-commercial-pro.png" alt="house">
-                                    test
+                                    <img src="./assets/img/gear-service-pro.png" alt="gear">
+                                    <span id="certification-gear-three">test</span>
                                 </li>
                             </div>
 
                             <div class="row">
                                 <li class="columns small-6 large-6  option__list-pro-item">
                                     <img src="./assets/img/home-residential-pro.png" alt="user">
-                                    test
+                                    <span id="certification-house-three">test</span>
                                 </li>
-                                <li class="columns small-6 large-6  option__list-pro-item">
-                                    <img src="./assets/img/gear-service-pro.png" alt="gear">
-                                    test
+                                 <li class="columns small-6 large-6  option__list-pro-item">
+                                    <img src="./assets/img/users-commercial-pro.png" alt="house">
+                                    <span id="certification-user-three">test</span>
                                 </li>
                             </div>                            
                         </ul>
@@ -354,7 +331,7 @@
                 </div>
             </div>
         </section> 
-
+        
         <footer class="footer">
             <div class="footer--top  text-center">
                 <div class="row">
@@ -420,8 +397,96 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Place modals here -->
+        <div id="modal--email" class="reveal-modal reveal-modal--email" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <div class="email">
+                <div class="email__content">
+                    <h1 class="email__content-heading">Email</h1>
+                    <h2 class="email__content-title">Premium Pools &amp; Spas of Charlotte</h2>
+                </div>
+                <div class="email__body">
+                   <div>
+                        <p class="email__body-text">Fill out the form below and Premium Pools &amp; Spas of Charlotte will get in touch.</p>
+                    </div>
+                    <div class="email__form-container">
+                        <form action="#" id="form--email" method="get">
+                            <div>
+                                <label for="full-name">First and last name</label>
+                                 <span class="right">
+                                    <img src="./assets/img/checkmark-circle.png" alt="check mark">
+                                </span>
+                                <input  type="text" name="full-name" placeholder="Jane Smith">
+                            </div>
+
+                            <div class="short">
+                                <label for="number">Phone number</label>
+                                <span class="right">
+                                    <img src="./assets/img/circle-form.png" alt="check mark">
+                                </span>
+                                <input type="tel" name="number">
+                            </div>
+
+                            <div>
+                                <label for="email">Email address</label>
+                                <span class="right">
+                                    <img src="./assets/img/circle-form.png" alt="check mark">
+                                </span>
+                                <input type="email" name="email">
+                            </div>
+
+                            <div>
+                                <label for="comments">Comments or questions</label>
+                                <span class="right  hint">optional</span>
+                                <textarea rows="4" cols="30" name="comments">
+                                    
+                                </textarea>
+                            </div>
+
+                            <div class="form__survey">
+                                <span class="right  hint desktop">optional</span>
+                                <p class="form__survey-text">Do you currently own a pool or spa?</p>
+                                <div class="buttons--mobile">
+                                    <div>
+                                        <input type="checkbox" id="yes" name="yes" value="yes" checked>
+                                        <label for="yes">Yes</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="no" name="no" value="no">
+                                        <label for="no">No</label>
+                                    </div>
+                                </div>
+
+                                <div class="buttons--desktop">
+                                    <button type="button" class="button button--teal">Yes</button>
+                                    <button type="button" class="button button--white">No</button>
+                                </div>
+                            </div>
+                        </form>
+                        <hr>
+                        <div class="send-container--mobile">
+                            <a href="#">Send</a>
+                        </div>
+                        <div class="send-container--desktop  text-center">
+                            <a href="#">Send my email
+                                <img src="./assets/img/next-arrow.png" alt="arrow">
+                            </a>
+                        </div>
+                    </div>    
+                </div>
+                <footer class="email__footer">
+                    <p class="email__footer-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
+                </footer>
+                
+                <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+            </div>
+        </div>
+        <!-- End modals -->
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="node_modules/zurb-foundation-5/js/foundation/foundation.js"></script>
+        <script src="node_modules/zurb-foundation-5/js/foundation/foundation.reveal.js"></script>
         <script src="assets/js/project.js"></script>
     </body>
 </html>

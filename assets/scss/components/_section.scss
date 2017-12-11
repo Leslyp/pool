@@ -1,11 +1,4 @@
 .section {
-	/*&--filter-mobile{
-		background-color: $background-primary;
-
-		@media screen and (min-width: 1440px) {
-			display: none;
-		}
-	}*/
 	&--filter-desktop{
 		@media screen and (min-width: 1440px) {
 			margin-top: -70px;
@@ -19,7 +12,7 @@
 		}
 	}
 	&--hero {
-		margin-top: 7px;
+		margin-top: -10px;
 		background-image: url('../img/water-image.png');
 		background-size: 282% 133%;
 		background-position: -339px -3px; 
