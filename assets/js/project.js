@@ -14,7 +14,6 @@ jQuery( document ).ready( function( $ ) {
 	}); 
 
 	$.ajax({
-	 
 	    // The URL for the request
 	    url: "dealers.json",
 	 
@@ -70,8 +69,22 @@ jQuery( document ).ready( function( $ ) {
 		$("#certification-house-three").text(json.dealers[2].data['certifications'][2]);
 		$("#certification-gear-three").text(json.dealers[2].data['certifications'][3]);
 
-		
+		// fill in CLosed if no hours are available
+		$('.option__list span').each( function() {
+		    $(this).text( function(i, t) {
+			    return t.length == '' ? '- CLOSED' :  t;
+			});
+		});
+
+		// delete certification if it's not available
+		$('.option__list-pro li').each( function() {
+		    $(this).text( function(i, t) {
+			    return t.length == '' ? '- CLOSED' :  t;
+			});
+		});
+
 	  })
+
 	  // Code to run if the request fails; the raw request and
 	  // status codes are passed to the function
 	  .fail(function( xhr, status, errorThrown ) {
@@ -84,7 +97,6 @@ jQuery( document ).ready( function( $ ) {
 	  .always(function( xhr, status ) {
 	    alert( "The request is complete!" );
     });
-
  });
 
 
